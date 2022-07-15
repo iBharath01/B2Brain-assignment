@@ -1,0 +1,112 @@
+.Sidebar {
+    background-color: white;
+}
+
+.Sidebar_logo {
+    display: flex; 
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.icon_element {
+    width: 35px;
+    height: 31px;
+    top: 87px;
+    left: 15px;
+}
+
+.header_element {
+    width: 82px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30.05px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.elements {
+    flex-direction: column;
+    margin-top: 47px;
+    margin-left: 15px;
+}
+
+
+.dashboard_icon {
+    display: flex;
+    gap: 17px;
+}
+
+
+.dashboard {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.86px;
+}
+
+.items {
+    display: flex;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+.items_text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.intel_item {
+    display: flex;
+    align-items: center;
+    gap: 90px
+}
+
+.leads_item {
+    display: flex;
+    align-items: center;
+    gap: 85px
+}
+
+
+.unread_intel {
+    margin-top: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    line-height: 13.66px;
+    background: #FF7474;
+    border-radius: 15px;
+    color: white;
+    width: 55px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.unsean_leads {
+    margin-top: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    line-height: 13.66px;
+    background: #FF7474;
+    border-radius: 15px;
+    color: white;
+    width: 55px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 90px
+}
+
+.uparrow {
+    display: flex;
+    align-items: center;
+    gap: 71px
+}
+
