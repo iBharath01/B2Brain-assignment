@@ -1,0 +1,46 @@
+.navbar {
+    width: 1575px;
+    height: 60px;
+    background-color: white;
+}
+
+.searchbar_a {
+    display: flex;
+    gap: 810px;
+
+}
+
+.searchbar {
+    display: flex;
+    gap: 14.7px;
+    margin-left: 24.11px;
+    margin-top: 21px;
+}
+
+.input {
+    width: 635.13px;
+    height: 22px;
+    opacity: 30%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.86px;
+}
+
+.Bell_a {
+    display: flex;
+    margin-top: 18px;
+    gap: 8.1px;
+}
+
+.bell {
+    height: 25px;
+    width: 25px;
+    background-color: #EFF3F9;
+    text-align: center;
+}
+
+.logo {
+    height: 25px;
+    width: 25px;
+}
