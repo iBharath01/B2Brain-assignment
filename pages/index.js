@@ -16,7 +16,7 @@ export default function Home() {
         <div>
           <Navbar />
         </div>
-        <div className={Styles.Home}>
+        <div>
           <div className={Styles.image_hero}>
             <Image src={Hero} alt="hero" layout="fill" />
           </div>

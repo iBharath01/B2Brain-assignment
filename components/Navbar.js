@@ -7,18 +7,19 @@ import Logo from "../assets/Logo.png";
 const Navbar = () => {
   return (
     <div className={Styles.navbar}>
-      <div className={Styles.searchbar_a}>
-        <div className={Styles.searchbar}>
+      <div className={Styles.searchbar_container}>
+        <div className={Styles.search_icon}>
           <div>
             <Search />
           </div>
-          <div className={Styles.input}>
-            <input type={"text"} placeholder={"Search by account name or website"} />
+          <div >
+            <input className={Styles.input_element} type={"text"} placeholder={"Search by account name or website"} />
           </div>
         </div>
-        <div className={Styles.Bell_a}>
+        <div className={Styles.Bell_container}>
           <div className={Styles.bell}>
             <Bell />
+
           </div>
           <div className={Styles.logo}> 
             <Image src={Logo} alt="logo" />
