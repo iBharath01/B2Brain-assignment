@@ -10,6 +10,41 @@
   height: 100%;
 }
 
+.account_container_items {
+ display: flex;
+ display: grid;
+ grid-template-columns: 80% 20%;
+}
+
+.accounts_heading {
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 50%;
+  margin-left: 57px;
+  margin-bottom: 22px;
+  margin-top: 48px;
+}
+
+.quick_actions {
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 50%;
+  margin-bottom: 22px;
+  margin-top: 48px;
+}
+
+.quick_actions_items {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 37px;
+  column-gap: 20px;
+}
+
+.action_element {
+  margin-bottom: 33px;
+}
+
 .Contain__container {
   width: 100%;
   height: 100%;

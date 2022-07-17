@@ -17,7 +17,9 @@ export default function Home() {
   useEffect(() => {
     const debounceHandler = setTimeout(() => {
       fetch(
-        `https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=${encodeURIComponent(search)}`
+        `https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=${encodeURIComponent(
+          search
+        )}`
       )
         .then((response) => response.json())
         .then((data) => setSearchResults(data));
@@ -57,10 +59,23 @@ export default function Home() {
           />
         </div>
         {isSearchbarOpen ? (
-          <div>
-            {searchResults.map((result, index) => (
-              <Accounts key={index} {...result}/>
-            ))}
+          <div className={Styles.account_container_items}>
+            <div>
+              <div className={Styles.accounts_heading}>Similar accounts</div>
+              <div>
+                {searchResults.map((result, index) => (
+                  <Accounts key={index} {...result} />
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className={Styles.quick_actions}>Quick Actions</div>
+              <div className={Styles.quick_actions_items}>
+                <div className={Styles.action_element}>Track new account</div>
+                <div className={Styles.action_element}>Bulk track accounts</div>
+                <div className={Styles.action_element}>Manage accounts</div>
+              </div>
+            </div>
           </div>
         ) : (
           <div>

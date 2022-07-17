@@ -1,8 +1,8 @@
 .accounts_container {
   display: flex;
-
   height: 100%;
   width: 100%;
+  margin-left: 57px;
 }
 
 .accounts_Subcontainer {
@@ -14,6 +14,7 @@
   position: relative;
   height: 50px;
   width: 50px;
+  margin-bottom: 40px;
 }
 
 .accounts_company_logo_name {
@@ -30,13 +31,12 @@
 }
 
 .company_name {
-
   font-weight: 700;
   margin-top: 5px;
 }
 
 .company_website {
-  width: 94px;
+  width: 100%;
   height: 16px;
   font-size: 14px;
   font-weight: 400;
