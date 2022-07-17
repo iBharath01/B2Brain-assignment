@@ -62,7 +62,14 @@ export default function Home() {
           <div className={Styles.account_container_items}>
             <div>
               <div className={Styles.accounts_heading}>Similar accounts</div>
-              <div>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  width: "100%",
+                  gap:'1rem'
+                }}
+              >
                 {searchResults.map((result, index) => (
                   <Accounts key={index} {...result} />
                 ))}
