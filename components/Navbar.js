@@ -4,16 +4,18 @@ import Bell from "./Icons/Bell";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className={Styles.navbar}>
       <div className={Styles.searchbar_container}>
         <div className={Styles.search_icon}>
           <div>
-            <Search />
+            {props.isSearchbarOpen ? <button onClick={props.clearSearchbar}>
+              X
+            </button> : <Search />}
           </div>
           <div >
-            <input className={Styles.input_element} type={"text"} placeholder={"Search by account name or website"} />
+            <input className={Styles.input_element} type={"text"} placeholder={"Search by account name or website"}  onFocus={props.handleSearchbarFocus}/>
           </div>
         </div>
         <div className={Styles.Bell_container}>

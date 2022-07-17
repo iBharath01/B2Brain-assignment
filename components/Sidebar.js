@@ -11,7 +11,7 @@ import Help from "../components/Icons/Help";
 import Downarrow from "../components/Icons/Downarrow";
 import Uparrow from "../components/Icons/Uparrow";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <div className={Styles.Sidebar}>
       <div className={Styles.Sidebar_logo}>
@@ -31,20 +31,21 @@ const Sidebar = () => {
           <div className={Styles.items}>
             <div>
               <Intel />
-            </div >
+            </div>
             <div>Intel</div>
           </div>
           <div className={Styles.unread_intel}>4 unread</div>
         </div>
         <div className={Styles.leads_item}>
-        <div className={Styles.items}>
-          <div>
-            <Leads />
+          <div className={Styles.items}>
+            <div>
+              <Leads />
+            </div>
+            <div> Leads </div>
           </div>
-          <div> Leads </div>
+          <div className={Styles.unsean_leads}>4 unsean</div>
         </div>
-        <div className={Styles.unsean_leads}>4 unsean</div>
-        </div>
+        <div>
         <div className={Styles.dropdown}>
           <div className={Styles.items}>
             <div>
@@ -56,6 +57,15 @@ const Sidebar = () => {
             <Downarrow />
           </div>
         </div>
+        <div>
+          <ul className={Styles.list_item}>
+            <li>Manage all</li>
+            <li>Intel Track new accounts</li>
+            <li>Bulk import</li>
+          </ul>
+        </div>
+        </div>
+        <div>
         <div className={Styles.uparrow}>
           <div className={Styles.items}>
             <div>
@@ -66,6 +76,14 @@ const Sidebar = () => {
           <div>
             <Uparrow />
           </div>
+        </div>
+        <div>
+          <ul className={Styles.list_item}>
+            <li>product Focus</li>
+            <li>Intel preferences</li>
+            <li>Lead Persona</li>
+          </ul>
+        </div>
         </div>
         <div className={Styles.items}>
           <div>
