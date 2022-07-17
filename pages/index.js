@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const debounceHandler = setTimeout(() => {
       fetch(
-        "https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=test"
+        `https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=${encodeURIComponent(search)}`
       )
         .then((response) => response.json())
         .then((data) => setSearchResults(data));
