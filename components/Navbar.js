@@ -30,9 +30,10 @@ const Navbar = (props) => {
         <div className={Styles.Bell_container}>
           <div className={Styles.bell}>
             <Bell />
+            <span className={Styles.pointer}> </span>
           </div>
           <div className={Styles.logo}>
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo" layout="fill"/>
           </div>
         </div>
       </div>
