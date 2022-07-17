@@ -12,13 +12,15 @@ export default function Home() {
   const [isSearchbarOpen, setIsSearchbarOpen] = useState(false);
   const [search, setSearch] = useState("");
 
+  const [searchResults, setSearchResults] = useState([]);
+
   useEffect(() => {
     const debounceHandler = setTimeout(() => {
       fetch(
         "https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=test"
       )
         .then((response) => response.json())
-        .then((data) => console.log(data));
+        .then((data) => setSearchResults(data));
     }, 2000);
 
     return () => {
@@ -56,14 +58,9 @@ export default function Home() {
         </div>
         {isSearchbarOpen ? (
           <div>
-            <Accounts
-              logo={
-                "https://www.looper.com/img/gallery/20-epic-movies-like-avatar-you-need-to-watch-next/intro-1645555067.webp"
-              }
-              company={"Carr"}
-              website={"https://carr.com"}
-            />
-            <Accounts logo={""} company={"Darr"} website={"https://darr.com"} />
+            {searchResults.map((result, index) => (
+              <Accounts key={index} {...result}/>
+            ))}
           </div>
         ) : (
           <div>
