@@ -11,9 +11,9 @@
 }
 
 .account_container_items {
- display: flex;
- display: grid;
- grid-template-columns: 80% 20%;
+  display: grid;
+  grid-template-columns: 70% 20%;
+  justify-content: space-between;
 }
 
 .accounts_heading {
@@ -34,7 +34,7 @@
 }
 
 .quick_actions_items {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 14px;
   margin-top: 37px;
