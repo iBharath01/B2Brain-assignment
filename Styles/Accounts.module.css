@@ -16,9 +16,21 @@
   width: 50px;
 }
 
+.accounts_company_logo_name {
+  width: 100%;
+  height: 100%;
+  background-color: #ff6059;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .company_name {
-  width: 88px;
-  height: 22px;
+
   font-weight: 700;
   margin-top: 5px;
 }
