@@ -1,0 +1,64 @@
+.accounts_container {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+}
+
+.accounts_Subcontainer {
+  display: flex;
+  gap: 22px;
+}
+
+.accounts_logo {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.company_name {
+  width: 88px;
+  height: 22px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.company_website {
+  width: 94px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.button_container_red {
+  height: 30px;
+  width: 74px;
+  margin-left: 106px;
+  background-color: white;
+  border: 1px #ff6059;
+  border-style: solid;
+  margin-top: 4px;
+}
+
+.buttton_text_red {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff6059;
+}
+
+.button_container_green {
+  height: 30px;
+  width: 74px;
+  margin-left: 106px;
+  background-color: white;
+  border: 1px #1aab2b;
+  border-style: solid;
+  margin-top: 4px;
+}
+
+.buttton_text_green {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1aab2b;
+}

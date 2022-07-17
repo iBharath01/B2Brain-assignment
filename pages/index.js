@@ -10,17 +10,20 @@ import { useState } from "react";
 
 export default function Home() {
   const [isSearchbarOpen, setIsSearchbarOpen] = useState(false);
+  const [search, setSearch] = useState("");
 
   const handleSearchbarFocus = () => {
     setIsSearchbarOpen(true);
-  }
+  };
 
   const clearSearchbar = () => {
     setIsSearchbarOpen(false);
-  }
-  
+  };
 
-
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+    console.log(e.target.value);
+  };
 
   return (
     <div className={Styles.Home}>
@@ -29,27 +32,39 @@ export default function Home() {
       </div>
       <div className={Styles.Contain__container}>
         <div>
-          <Navbar isSearchbarOpen={isSearchbarOpen} clearSearchbar={clearSearchbar} handleSearchbarFocus={handleSearchbarFocus}/>
+          <Navbar
+            isSearchbarOpen={isSearchbarOpen}
+            clearSearchbar={clearSearchbar}
+            handleSearchbarFocus={handleSearchbarFocus}
+            search={search}
+            handleSearch={handleSearch}
+          />
         </div>
-        {
-          isSearchbarOpen ?  <div>
-          <Accounts />
-        </div>:     <div>
-          <div className={Styles.image_hero}>
-            <Image src={Hero} alt="hero" layout="fill" />
+        {isSearchbarOpen ? (
+          <div>
+            <Accounts
+              logo={
+                "https://www.looper.com/img/gallery/20-epic-movies-like-avatar-you-need-to-watch-next/intro-1645555067.webp"
+              }
+              company={"Carr"}
+              website={"https://carr.com"}
+            />
+            <Accounts logo={""} company={"Darr"} website={"https://darr.com"} />
           </div>
-          <div className={Styles.image_proofOfWork}>
-            <Image src={proofOfWork} alt="proofOfWork" layout="fill" />
+        ) : (
+          <div>
+            <div className={Styles.image_hero}>
+              <Image src={Hero} alt="hero" layout="fill" />
+            </div>
+            <div className={Styles.image_proofOfWork}>
+              <Image src={proofOfWork} alt="proofOfWork" layout="fill" />
+            </div>
+            <div className={Styles.image_Testimony}>
+              <Image src={Testimony} alt="Testimony" layout="fill" />
+            </div>
           </div>
-          <div className={Styles.image_Testimony}>
-            <Image src={Testimony} alt="Testimony" layout="fill" />
-          </div>
-        </div>
-        }
-       
-    
+        )}
       </div>
-      
     </div>
   );
 }
