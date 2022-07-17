@@ -6,11 +6,25 @@ import Hero from "../assets/Hero.png";
 import proofOfWork from "../assets/ProofOfWork.png";
 import Testimony from "../assets/Testimony.png";
 import Accounts from "../components/Accounts";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [isSearchbarOpen, setIsSearchbarOpen] = useState(false);
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    const debounceHandler = setTimeout(() => {
+      fetch(
+        "https://tva.staging.b2brain.com/search/autocomplete_org_all/?q=test"
+      )
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    }, 2000);
+
+    return () => {
+      clearTimeout(debounceHandler);
+    };
+  }, [search]);
 
   const handleSearchbarFocus = () => {
     setIsSearchbarOpen(true);
