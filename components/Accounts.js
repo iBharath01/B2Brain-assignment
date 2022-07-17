@@ -2,7 +2,7 @@ import Styles from "../Styles/Accounts.module.css";
 import Logo from "../assets/Logo.png";
 import Image from "next/image";
 import { useState } from "react";
-import axios from "axios";
+
 
 const Accounts = (props) => {
   const [isTracking, setIsTracking] = useState(false);
@@ -27,20 +27,7 @@ const Accounts = (props) => {
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             ) : (
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "pink",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  fontSize: "22px",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                }}
-              >
+              <div className={Styles.accounts_company_logo_name}>
                 {props.company[0]}
               </div>
             )}
