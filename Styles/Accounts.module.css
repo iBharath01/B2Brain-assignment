@@ -44,7 +44,7 @@
   opacity: 50%;
 }
 
-.button_container_red {
+.button_container_Track {
   height: 30px;
   width: 74px;
   margin-left: 106px;
@@ -52,15 +52,14 @@
   border: 1px #ff6059;
   border-style: solid;
   margin-top: 4px;
-}
-
-.buttton_text_red {
   font-size: 12px;
   font-weight: 700;
   color: #ff6059;
 }
 
-.button_container_green {
+
+
+.button_container_Tracking {
   height: 30px;
   width: 74px;
   margin-left: 106px;
@@ -68,10 +67,8 @@
   border: 1px #1aab2b;
   border-style: solid;
   margin-top: 4px;
-}
-
-.buttton_text_green {
   font-size: 12px;
   font-weight: 700;
   color: #1aab2b;
 }
+

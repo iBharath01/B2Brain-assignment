@@ -41,14 +41,14 @@ const Accounts = (props) => {
         {isTracking ? (
           <button
             onClick={logTracking}
-            className={Styles.button_container_green}
+            className={Styles.button_container_Tracking}
           >
             Tracking
           </button>
         ) : (
           <button
             onClick={handleTracking}
-            className={Styles.button_container_red}
+            className={Styles.button_container_Track}
           >
             Track
           </button>
