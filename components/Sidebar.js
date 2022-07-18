@@ -22,7 +22,7 @@ const Sidebar = (props) => {
 
   const handlePreferencesClick = () => {
     setIsPreferencesClicked((status) => !status);
-  }
+  };
 
   return (
     <div className={Styles.Sidebar}>
@@ -55,15 +55,13 @@ const Sidebar = (props) => {
             </div>
             <div> Leads </div>
           </div>
-          <div className={Styles.unsean_leads}>4 unsean</div>
+          <div className={Styles.unseen_leads}>4 unseen</div>
         </div>
-
-
         <div>
           <div className={Styles.uparrow}>
             <div className={Styles.items}>
               <div>
-                < Accounts />
+                <Accounts />
               </div>
               <div> Accounts</div>
             </div>
@@ -79,8 +77,6 @@ const Sidebar = (props) => {
             </ul>
           </div>
         </div>
-
-
         <div>
           <div className={Styles.uparrow}>
             <div className={Styles.items}>
@@ -101,7 +97,6 @@ const Sidebar = (props) => {
             </ul>
           </div>
         </div>
-
         <div className={Styles.items}>
           <div>
             <Integrations />

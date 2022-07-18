@@ -2,6 +2,9 @@
   background-color: white;
   height: 100vh;
   padding: 15px;
+  box-shadow:
+  38px 0px 21px -16px rgba(0, 0, 0, 0.06)
+;
 }
 
 .Sidebar_logo {
@@ -81,7 +84,7 @@
   margin-bottom: 4px;
 }
 
-.unsean_leads {
+.unseen_leads {
   margin-top: 16px;
   font-size: 10px;
   font-weight: 700;
