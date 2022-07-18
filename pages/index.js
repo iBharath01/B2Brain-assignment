@@ -62,14 +62,7 @@ export default function Home() {
           <div className={Styles.account_container_items}>
             <div>
               <div className={Styles.accounts_heading}>Similar accounts</div>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  width: "100%",
-                  gap:'1rem'
-                }}
-              >
+              <div className={Styles.flex_content}>
                 {searchResults.map((result, index) => (
                   <Accounts key={index} {...result} />
                 ))}
@@ -85,7 +78,7 @@ export default function Home() {
             </div>
           </div>
         ) : (
-          <div>
+          <div className={Styles.landing__page}>
             <div className={Styles.image_hero}>
               <Image src={Hero} alt="hero" layout="fill" />
             </div>
