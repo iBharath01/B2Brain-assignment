@@ -1,129 +1,127 @@
 .Sidebar {
-    background-color: white;
-    height: 100vh;
+  background-color: white;
+  height: 100vh;
+  padding: 15px;
 }
 
 .Sidebar_logo {
-    display: flex; 
-    gap: 15px;
-    margin-top: 15px;
-    margin-left: 15px;
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .icon_element {
-    width: 35px;
-    height: 31px;
-    top: 87px;
-    left: 15px;
+  width: 35px;
+  height: 31px;
+  top: 87px;
+  left: 15px;
 }
 
 .header_element {
-    width: 82px;
-    height: 30px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30.05px;
-    font-family: 'Manrope', sans-serif;
+  width: 82px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30.05px;
+  font-family: "Manrope", sans-serif;
 }
 
 .elements {
-    flex-direction: column;
-    margin-top: 47px;
-    margin-left: 15px;
+  flex-direction: column;
+  margin-top: 47px;
 }
-
 
 .dashboard_icon {
-    display: flex;
-    gap: 17px;
+  display: flex;
+  gap: 17px;
 }
 
-
 .dashboard {
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21.86px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.86px;
 }
 
 .items {
-    display: flex;
-    gap: 17px;
-    margin-top: 20px;
+  display: flex;
+  gap: 17px;
+  margin-top: 20px;
 }
 
 .items_text {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .intel_item {
-    display: flex;
-    align-items: center;
-    gap: 90px
+  display: flex;
+  align-items: center;
+  gap: 90px;
 }
 
 .leads_item {
-    display: flex;
-    align-items: center;
-    gap: 85px
+  display: flex;
+  align-items: center;
+  gap: 85px;
 }
 
-
 .unread_intel {
-    margin-top: 16px;
-    font-size: 10px;
-    font-weight: 700;
-    font-family: 'Manrope', sans-serif;
-    line-height: 13.66px;
-    background: #FF7474;
-    border-radius: 15px;
-    color: white;
-    width: 55px;
-    text-align: center;
-    margin-bottom: 4px;
+  margin-top: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  line-height: 13.66px;
+  background: #ff7474;
+  border-radius: 15px;
+  color: white;
+  width: 55px;
+  text-align: center;
+  margin-bottom: 4px;
 }
 
 .unsean_leads {
-    margin-top: 16px;
-    font-size: 10px;
-    font-weight: 700;
-    font-family: 'Manrope', sans-serif;
-    line-height: 13.66px;
-    background: #FF7474;
-    border-radius: 15px;
-    color: white;
-    width: 55px;
-    text-align: center;
-    margin-bottom: 4px;
+  margin-top: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  line-height: 13.66px;
+  background: #ff7474;
+  border-radius: 15px;
+  color: white;
+  width: 55px;
+  text-align: center;
+  margin-bottom: 4px;
 }
 
 .dropdown {
-    display: flex;
-    align-items: center;
-    gap: 90px
+  display: flex;
+  align-items: center;
+  gap: 90px;
 }
 
 .uparrow {
-    display: flex;
-    align-items: center;
-    gap: 71px
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 71px;
 }
 
-
 .dropdown_item {
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .list_item {
-    list-style-type: none;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    opacity: 60%;
-    font-size: 14px;
+  list-style-type: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  opacity: 60%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-

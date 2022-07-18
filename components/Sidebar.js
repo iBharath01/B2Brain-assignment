@@ -10,8 +10,20 @@ import Teams from "../components/Icons/Teams";
 import Help from "../components/Icons/Help";
 import Downarrow from "../components/Icons/Downarrow";
 import Uparrow from "../components/Icons/Uparrow";
+import { useState } from "react";
 
 const Sidebar = (props) => {
+  const [isAccountsClicked, setIsAcoountsClicked] = useState(false);
+  const [isPreferencesClicked, setIsPreferencesClicked] = useState(false);
+
+  const handleAccountClick = () => {
+    setIsAcoountsClicked((status) => !status);
+  };
+
+  const handlePreferencesClick = () => {
+    setIsPreferencesClicked((status) => !status);
+  }
+
   return (
     <div className={Styles.Sidebar}>
       <div className={Styles.Sidebar_logo}>
@@ -45,46 +57,51 @@ const Sidebar = (props) => {
           </div>
           <div className={Styles.unsean_leads}>4 unsean</div>
         </div>
+
+
         <div>
-        <div className={Styles.dropdown}>
-          <div className={Styles.items}>
-            <div>
-              <Accounts />
+          <div className={Styles.uparrow}>
+            <div className={Styles.items}>
+              <div>
+                < Accounts />
+              </div>
+              <div> Accounts</div>
             </div>
-            <div> Accounts</div>
-          </div>
-          <div className={Styles.arrow}>
-            <Downarrow />
-          </div>
-        </div>
-        <div>
-          <ul className={Styles.list_item}>
-            <li>Manage all</li>
-            <li>Intel Track new accounts</li>
-            <li>Bulk import</li>
-          </ul>
-        </div>
-        </div>
-        <div>
-        <div className={Styles.uparrow}>
-          <div className={Styles.items}>
-            <div>
-              <Preferences />
+            <div onClick={handleAccountClick}>
+              {isAccountsClicked ? <Downarrow /> : <Uparrow />}
             </div>
-            <div> Preferences</div>
           </div>
-          <div>
-            <Uparrow />
+          <div style={{ display: isAccountsClicked ? "block" : "none" }}>
+            <ul className={Styles.list_item}>
+              <li>Manage all</li>
+              <li>Track new accounts</li>
+              <li>Bulk Import</li>
+            </ul>
           </div>
         </div>
+
+
         <div>
-          <ul className={Styles.list_item}>
-            <li>product Focus</li>
-            <li>Intel preferences</li>
-            <li>Lead Persona</li>
-          </ul>
+          <div className={Styles.uparrow}>
+            <div className={Styles.items}>
+              <div>
+                <Preferences />
+              </div>
+              <div> Preferences</div>
+            </div>
+            <div onClick={handlePreferencesClick}>
+              {isPreferencesClicked ? <Downarrow /> : <Uparrow />}
+            </div>
+          </div>
+          <div style={{ display: isPreferencesClicked ? "block" : "none" }}>
+            <ul className={Styles.list_item}>
+              <li>product Focus</li>
+              <li>Intel preferences</li>
+              <li>Lead Persona</li>
+            </ul>
+          </div>
         </div>
-        </div>
+
         <div className={Styles.items}>
           <div>
             <Integrations />
